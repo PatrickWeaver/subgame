@@ -349,6 +349,7 @@ UnityEngine.Transform::INTERNAL_set_position
 UnityEngine.Transform::INTERNAL_set_rotation
 UnityEngine.Transform::SetAsFirstSibling
 UnityEngine.Transform::SetParent
+UnityEngine.Transform::set_parentInternal
 UnityEngine.Transform::GetChild
 UnityEngine.Transform::get_parentInternal
 UnityEngine.U2D.SpriteAtlasManager::Register

@@ -1666,6 +1666,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Transform_SetParent();
 		Register_UnityEngine_Transform_SetParent();
 
+		//System.Void UnityEngine.Transform::set_parentInternal(UnityEngine.Transform)
+		void Register_UnityEngine_Transform_set_parentInternal();
+		Register_UnityEngine_Transform_set_parentInternal();
+
 		//UnityEngine.Transform UnityEngine.Transform::GetChild(System.Int32)
 		void Register_UnityEngine_Transform_GetChild();
 		Register_UnityEngine_Transform_GetChild();

@@ -1,2 +1,8 @@
 <linker>
+	<assembly fullname="Assembly-CSharp">
+		<type fullname="UIScript">
+			<method name="GameWon"/>
+			<method name="GameOver"/>
+		</type>
+	</assembly>
 </linker>

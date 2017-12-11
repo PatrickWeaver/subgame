@@ -2,16 +2,16 @@
 All Assemblies
 ---------------------------------------------------
 Summary:
-  Total Type Removals = 2231
-    Nested = 160
-    Interfaces = 148
-    Abstract Classes = 150
+  Total Type Removals = 2220
+    Nested = 155
+    Interfaces = 145
+    Abstract Classes = 148
     Generic Types = 86
     Generic Interfaces = 6
     Generic Abstract Classes = 3
     Attributes = 177
   Total Field Removals = 780
-  Total Method Removals = 11403
+  Total Method Removals = 11362
 ---------------------------------------------------
 ---------------------------------------------------
 Assembly: Mono.Security
@@ -10619,7 +10619,7 @@ Summary:
     Generic Abstract Classes = 0
     Attributes = 47
   Total Field Removals = 32
-  Total Method Removals = 2410
+  Total Method Removals = 2406
   References Removed = 0
 ---------------------------------------------------
     AOT.MonoPInvokeCallbackAttribute
@@ -12614,8 +12614,6 @@ Summary:
         IsDriven()
         IsDriven(UnityEngine.DrivenTransformProperties)
         set_anchoredPosition3D(UnityEngine.Vector3)
-        set_offsetMax(UnityEngine.Vector2)
-        set_offsetMin(UnityEngine.Vector2)
     UnityEngine.ReflectionProbe
     UnityEngine.RejectDragAndDropMaterial
     UnityEngine.RenderBuffer
@@ -13423,8 +13421,6 @@ Summary:
         set_hasChanged(System.Boolean)
         set_hierarchyCapacity(System.Int32)
         set_localEulerAngles(UnityEngine.Vector3)
-        set_parent(UnityEngine.Transform)
-        set_parentInternal(UnityEngine.Transform)
         SetAsLastSibling()
         SetLocalEulerAngles(UnityEngine.Vector3,UnityEngine.RotationOrder)
         SetPositionAndRotation(UnityEngine.Vector3,UnityEngine.Quaternion)
@@ -15425,85 +15421,6 @@ Summary:
     UnityEngine.Tilemaps.TilemapCollider2D
     UnityEngine.Tilemaps.TilemapRenderer
 ---------------------------------------------------
-Assembly: UnityEngine.UI
----------------------------------------------------
-Summary:
-  Total Type Removals = 11
-    Nested = 5
-    Interfaces = 3
-    Abstract Classes = 2
-    Generic Types = 0
-    Generic Interfaces = 0
-    Generic Abstract Classes = 0
-    Attributes = 0
-  Total Field Removals = 0
-  Total Method Removals = 36
-  References Removed = 0
----------------------------------------------------
-    UnityEngine.EventSystems.AxisEventData
-        get_moveVector()
-    UnityEngine.EventSystems.BaseEventData
-        get_currentInputModule()
-        get_selectedObject()
-    UnityEngine.EventSystems.EventHandle
-    UnityEngine.EventSystems.PointerEventData
-        get_rawPointerPress()
-        get_worldNormal()
-        get_worldPosition()
-        IsScrolling()
-        set_worldNormal(UnityEngine.Vector3)
-        set_worldPosition(UnityEngine.Vector3)
-    UnityEngine.EventSystems.PointerInputModule/MouseState
-        AnyPressesThisFrame()
-        AnyReleasesThisFrame()
-    UnityEngine.EventSystems.RaycastResult
-        Clear()
-    UnityEngine.UI.AnimationTriggers
-        set_disabledTrigger(System.String)
-        set_highlightedTrigger(System.String)
-        set_normalTrigger(System.String)
-        set_pressedTrigger(System.String)
-    UnityEngine.UI.BaseVertexEffect
-    UnityEngine.UI.CanvasUpdateRegistry
-        TryRegisterCanvasElementForGraphicRebuild(UnityEngine.UI.ICanvasElement)
-    UnityEngine.UI.Collections.IndexedSet`1
-        RemoveAll(System.Predicate`1<T>)
-    UnityEngine.UI.ColorBlock
-        op_Equality(UnityEngine.UI.ColorBlock,UnityEngine.UI.ColorBlock)
-        op_Inequality(UnityEngine.UI.ColorBlock,UnityEngine.UI.ColorBlock)
-        set_disabledColor(UnityEngine.Color)
-        set_highlightedColor(UnityEngine.Color)
-        set_normalColor(UnityEngine.Color)
-        set_pressedColor(UnityEngine.Color)
-    UnityEngine.UI.DefaultControls
-    UnityEngine.UI.Dropdown/OptionData
-        .ctor(System.String,UnityEngine.Sprite)
-    UnityEngine.UI.IGraphicEnabledDisabled
-    UnityEngine.UI.Image/Origin180
-    UnityEngine.UI.Image/Origin360
-    UnityEngine.UI.Image/Origin90
-    UnityEngine.UI.Image/OriginHorizontal
-    UnityEngine.UI.Image/OriginVertical
-    UnityEngine.UI.IMask
-    UnityEngine.UI.IVertexModifier
-    UnityEngine.UI.MaskUtilities
-        .ctor()
-    UnityEngine.UI.Misc
-        Destroy(UnityEngine.Object)
-    UnityEngine.UI.ObjectPool`1
-        get_countActive()
-        get_countInactive()
-    UnityEngine.UI.SpriteState
-        set_disabledSprite(UnityEngine.Sprite)
-        set_highlightedSprite(UnityEngine.Sprite)
-        set_pressedSprite(UnityEngine.Sprite)
-    UnityEngine.UI.StencilMaterial
-        Add(UnityEngine.Material,System.Int32)
-        ClearAll()
-    UnityEngine.UI.VertexHelper
-        AddUIVertexStream(System.Collections.Generic.List`1<UnityEngine.UIVertex>,System.Collections.Generic.List`1<System.Int32>)
-        get_currentIndexCount()
----------------------------------------------------
 Assembly: UnityEngine.UIElementsModule
 ---------------------------------------------------
 Summary:
@@ -15533,7 +15450,7 @@ Summary:
     Generic Abstract Classes = 0
     Attributes = 0
   Total Field Removals = 0
-  Total Method Removals = 47
+  Total Method Removals = 46
   References Removed = 0
 ---------------------------------------------------
     UnityEngine.AdditionalCanvasShaderChannels
@@ -15565,7 +15482,6 @@ Summary:
         set_interactable(System.Boolean)
     UnityEngine.CanvasRenderer
         .ctor()
-        AddUIVertexStream(System.Collections.Generic.List`1<UnityEngine.UIVertex>,System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Collections.Generic.List`1<UnityEngine.Color32>,System.Collections.Generic.List`1<UnityEngine.Vector2>,System.Collections.Generic.List`1<UnityEngine.Vector2>,System.Collections.Generic.List`1<UnityEngine.Vector2>,System.Collections.Generic.List`1<UnityEngine.Vector2>,System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Collections.Generic.List`1<UnityEngine.Vector4>)
         AddUIVertexStream(System.Collections.Generic.List`1<UnityEngine.UIVertex>,System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Collections.Generic.List`1<UnityEngine.Color32>,System.Collections.Generic.List`1<UnityEngine.Vector2>,System.Collections.Generic.List`1<UnityEngine.Vector2>,System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Collections.Generic.List`1<UnityEngine.Vector4>)
         CreateUIVertexStream(System.Collections.Generic.List`1<UnityEngine.UIVertex>,System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Collections.Generic.List`1<UnityEngine.Color32>,System.Collections.Generic.List`1<UnityEngine.Vector2>,System.Collections.Generic.List`1<UnityEngine.Vector2>,System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Collections.Generic.List`1<UnityEngine.Vector4>,System.Collections.Generic.List`1<System.Int32>)
         get_hasPopInstruction()

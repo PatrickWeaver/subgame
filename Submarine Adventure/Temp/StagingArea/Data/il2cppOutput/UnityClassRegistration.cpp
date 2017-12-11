@@ -17,6 +17,9 @@ void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_CloudWebServices();
 	RegisterModule_CloudWebServices();
 
+	void RegisterModule_ParticleSystem();
+	RegisterModule_ParticleSystem();
+
 	void RegisterModule_PerformanceReporting();
 	RegisterModule_PerformanceReporting();
 
@@ -37,6 +40,9 @@ void RegisterStaticallyLinkedModulesGranular()
 
 	void RegisterModule_IMGUI();
 	RegisterModule_IMGUI();
+
+	void RegisterModule_Wind();
+	RegisterModule_Wind();
 
 	void RegisterModule_JSONSerialize();
 	RegisterModule_JSONSerialize();
@@ -143,13 +149,13 @@ class ParticleAnimator;
 class ParticleEmitter; 
 class EllipsoidParticleEmitter; 
 class MeshParticleEmitter; 
-class ParticleSystem; 
+class ParticleSystem; template <> void RegisterClass<ParticleSystem>();
 class Renderer; template <> void RegisterClass<Renderer>();
 class BillboardRenderer; 
 class LineRenderer; 
 class MeshRenderer; template <> void RegisterClass<MeshRenderer>();
 class ParticleRenderer; 
-class ParticleSystemRenderer; 
+class ParticleSystemRenderer; template <> void RegisterClass<ParticleSystemRenderer>();
 class SkinnedMeshRenderer; 
 class SpriteMask; 
 class SpriteRenderer; template <> void RegisterClass<SpriteRenderer>();
@@ -255,7 +261,7 @@ void RegisterAllClasses()
 {
 void RegisterBuiltinTypes();
 RegisterBuiltinTypes();
-	//Total: 70 non stripped classes
+	//Total: 72 non stripped classes
 	//0. Behaviour
 	RegisterClass<Behaviour>();
 	//1. Unity::Component
@@ -390,11 +396,15 @@ RegisterBuiltinTypes();
 	RegisterClass<LightmapSettings>();
 	//66. Motion
 	RegisterClass<Motion>();
-	//67. Avatar
+	//67. ParticleSystem
+	RegisterClass<ParticleSystem>();
+	//68. ParticleSystemRenderer
+	RegisterClass<ParticleSystemRenderer>();
+	//69. Avatar
 	RegisterClass<Avatar>();
-	//68. AnimationClip
+	//70. AnimationClip
 	RegisterClass<AnimationClip>();
-	//69. PolygonCollider2D
+	//71. PolygonCollider2D
 	RegisterClass<PolygonCollider2D>();
 
 }
